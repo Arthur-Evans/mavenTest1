@@ -4,6 +4,7 @@ import Controller.MainController;
 import com.jfinal.config.*;
 import com.jfinal.template.Engine;
 
+
 public class MyConfig extends JFinalConfig {
     @Override
     public void configConstant(Constants constants) {
@@ -30,4 +31,5 @@ public class MyConfig extends JFinalConfig {
     public void configHandler(Handlers handlers) {
 
     }
+
 }

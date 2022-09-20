@@ -9,7 +9,6 @@ import com.jfinal.core.Path;
 @Path(value = "/",viewPath = "/")
 public class MainController extends Controller {
 
-
     public void index(){
         renderHtml("<h2>It works<h2>");
     }
@@ -26,7 +25,6 @@ public class MainController extends Controller {
         String title  = gender.equalsIgnoreCase("male")?"先生":"女士";
 
         Integer age = getParaToInt("age",0);
-
         if(age<18){
             renderHtml("未成年无法访问");
         }else{
